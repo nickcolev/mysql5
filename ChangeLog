@@ -1,0 +1,31 @@
+ChangeSet@1.2293, 2006-10-21 00:57:08+02:00, kent@mysql.com +3 -0
+  make_win_bin_dist:
+    Copy udf examples and raid.h
+    Create target "include" directory before copying files to it
+  CMakeLists.txt:
+    Only compile in bdb if configured
+  configure.in:
+    Raised version number to 5.0.27
+
+  CMakeLists.txt@1.2, 2006-10-21 00:43:01+02:00, kent@mysql.com +3 -1
+    Only compile in bdb if configured
+
+  configure.in@1.399, 2006-10-21 00:46:07+02:00, kent@mysql.com +2 -2
+    Raised version number to 5.0.27
+
+  scripts/make_win_bin_dist@1.2, 2006-10-21 00:41:19+02:00, kent@mysql.com +11 -4
+    Copy udf examples and raid.h
+    Create target "include" directory before copying files to it
+
+ChangeSet@1.2292, 2006-10-20 17:17:24-04:00, cmiller@zippy.cornsilk.net +2 -0
+  Bug #23427: incompatible ABI change in 5.0.26?
+  
+  Revert 1 June change enough to restore ABI compatibility with previous
+  versions.
+
+  include/mysql.h@1.163, 2006-10-20 17:17:22-04:00, cmiller@zippy.cornsilk.net +0 -6
+    Revert patch that breaks ABI compatibility
+
+  libmysqld/lib_sql.cc@1.115, 2006-10-20 17:17:22-04:00, cmiller@zippy.cornsilk.net +0 -1
+    Remove useless assignment.
+

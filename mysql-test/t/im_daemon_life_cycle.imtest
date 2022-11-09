@@ -1,0 +1,16 @@
+###########################################################################
+#
+# This file contains test for (1.2) test suite.
+#
+# Consult WL#2789 for more information.
+#
+###########################################################################
+
+--source include/im_check_env.inc
+
+###########################################################################
+
+# Kill the IM main process and check that the IM Angel will restart the main
+# process.
+
+--exec $MYSQL_TEST_DIR/t/kill_n_check.sh $IM_PATH_PID restarted 30
